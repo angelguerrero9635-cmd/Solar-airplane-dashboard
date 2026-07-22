@@ -1,10 +1,10 @@
 # Solar Glider — Project Log Dashboard
 
-A Next.js dashboard for the solar glider project. It reads
-and writes files **directly in your docs repo** (`solar-airplane`) via the
-GitHub API — there's no separate database. The repo stays the single source
-of truth; this is just a nicer window into it than editing markdown files
-by hand.
+A Next.js dashboard for the solar glider project. It reads files
+**directly from your docs repo** (`solar-airplane`) via the GitHub API —
+there's no separate database. The repo stays the single source of truth;
+this is a read-only window into it. All edits happen through Claude Code,
+not this app.
 
 This is a **separate app from your docs repo**. It has its own GitHub repo
 and its own Vercel project, and talks to your docs repo over the GitHub API
@@ -12,19 +12,14 @@ using a personal access token.
 
 ## What it does
 
-- **Dashboard** (`/`) — view and edit `CLAUDE.md` directly
+- **Dashboard** (`/`) — view `CLAUDE.md`
 - **Specs** (`/specs`) — component table and datasheet extractions
 - **Calc** (`/calculations`) — power budget and battery SOC write-ups
-  (the `.py` scripts themselves stay code-only — keep running those through
-  Claude Code, this just edits the accompanying `.md` explanations)
-- **ADRs** (`/decisions`) — browse existing decision records, create new
-  ones (auto-numbered) from a form
-- **Logs** (`/logs`) — append structured, dated test entries to
-  `logs/test_flights.md` without hand-editing markdown
-- **Roadmap** (`/docs/roadmap.md`) — view and edit the phase plan
-
-Every save is a real git commit to your docs repo, with a message like
-`Update CLAUDE.md via dashboard`.
+  (the `.py` scripts themselves stay code-only, run through Claude Code)
+- **ADRs** (`/decisions`) — browse existing decision records
+- **Logs** (`/logs`) — view dated bench test and flight test entries in
+  `logs/test_flights.md`
+- **Roadmap** (`/docs/roadmap.md`) — view the phase plan
 
 ## Setup
 
@@ -46,7 +41,7 @@ Use a **fine-grained token** scoped to only the docs repo:
 1. Go to <https://github.com/settings/personal-access-tokens/new>
 2. Repository access → **Only select repositories** → pick
    `solar-airplane`
-3. Permissions → **Contents: Read and write**
+3. Permissions → **Contents: Read-only** (this app never writes)
 4. Generate, copy the token (starts with `github_pat_`)
 
 ### 3. Deploy to Vercel
@@ -74,23 +69,18 @@ npm run dev
 
 ## Notes & limitations
 
+- **Read-only.** This app has no write path back to GitHub at all — no
+  editor, no save button, no PUT requests. All edits to the docs repo
+  happen through Claude Code; this dashboard is just a viewer.
 - **No authentication.** This app has no login gate — anyone with the
-  deployed URL can view and edit your docs repo. Only deploy it somewhere
+  deployed URL can view your docs repo's contents. Only deploy it somewhere
   not publicly discoverable, or add your own access control (e.g. Vercel's
   password protection or an allowlist) in front of it if that matters to
   you.
-- **No merge conflict handling.** If you edit the same file on the website
-  and in Claude Code at nearly the same time, whichever saves last wins
-  (standard GitHub Contents API behavior — a stale `sha` will make a save
-  fail with a clear error rather than silently overwriting, so you'd just
-  need to reload and reapply your edit).
 - **Doesn't run the Python scripts.** `calculations/power_budget.py` and
-  `battery_soc.py` stay Claude Code's job — this dashboard only edits their
-  companion markdown write-ups. If you want the website to actually execute
-  those and show live output, that's a further step (Vercel serverless
-  functions can run Python, but it's a bigger lift than this scaffold) —
-  say the word if you want that added later.
+  `battery_soc.py` stay Claude Code's job — this dashboard only displays
+  their companion markdown write-ups.
 - **Branch awareness.** Since your repo currently has work on a
   `claude/solar-fpv-glider-setup-oq43lr` branch, double check `GITHUB_BRANCH`
   points at wherever your latest committed state actually lives before
-  relying on this for edits.
+  relying on this for viewing.

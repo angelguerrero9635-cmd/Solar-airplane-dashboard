@@ -1,5 +1,5 @@
 import Frame from "@/components/Frame";
-import MarkdownEditor from "@/components/MarkdownEditor";
+import MarkdownViewer from "@/components/MarkdownViewer";
 import PageHeader from "@/components/PageHeader";
 
 export default function DashboardPage() {
@@ -8,10 +8,10 @@ export default function DashboardPage() {
       <PageHeader
         eyebrow="Project Rulebook"
         title="CLAUDE.md"
-        desc="The single file every Claude session reads first. Edits here commit straight to the repo so Claude Code and Claude Chat both pick them up next time."
+        desc="The single file every Claude session reads first. Edits happen through Claude Code, not here — this is a read-only view."
       />
       <Frame eyebrow="Root · Source of Truth">
-        <MarkdownEditor path="CLAUDE.md" label="CLAUDE.md" />
+        <MarkdownViewer path="CLAUDE.md" label="CLAUDE.md" />
       </Frame>
     </div>
   );

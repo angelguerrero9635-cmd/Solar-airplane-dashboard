@@ -1,5 +1,5 @@
 import Frame from "@/components/Frame";
-import MarkdownEditor from "@/components/MarkdownEditor";
+import MarkdownViewer from "@/components/MarkdownViewer";
 import PageHeader from "@/components/PageHeader";
 
 export default function RoadmapPage() {
@@ -11,7 +11,7 @@ export default function RoadmapPage() {
         desc="Prototype → production, with exit criteria for each phase."
       />
       <Frame eyebrow="docs/roadmap.md">
-        <MarkdownEditor path="docs/roadmap.md" />
+        <MarkdownViewer path="docs/roadmap.md" />
       </Frame>
     </div>
   );
