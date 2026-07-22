@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "5eba2769bf6db4bd222b554416402bd48af6f88e",
-  "sourceCommitMessage": "Clarify: current sensors are bench-only, in-flight = 1 voltage reading",
-  "copiedAt": "2026-07-22T04:59:22Z"
+  "sourceCommit": "8a5c667c88e1f41b9797d50e3d34d37c02d522c6",
+  "sourceCommitMessage": "Add visual wiring diagram + recommended physical wiring",
+  "copiedAt": "2026-07-22T05:17:05Z"
 }

@@ -27,6 +27,13 @@ The status pill in the header shows which `solar-airplane` commit the
 bundled content was last synced from (`content/_meta.json`), not a live
 sync indicator.
 
+Markdown files can embed images (e.g. `specs/wiring_diagram.svg`) using
+normal relative-path syntax, the same as they'd render on GitHub. The
+`/api/content/asset` route and `MarkdownViewer`'s image-path resolution
+handle serving them from the bundled `content/` folder — see
+`scripts/sync-content.sh` to make sure new image files get copied over
+too when you add one.
+
 ## Keeping content up to date
 
 Since content is bundled, not fetched live, it goes stale as

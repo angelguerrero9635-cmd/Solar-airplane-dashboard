@@ -3,6 +3,14 @@ import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 
+function resolveAssetPath(basePath, src) {
+  if (/^https?:\/\//.test(src) || src.startsWith("/")) return null;
+  const dir = basePath.includes("/")
+    ? basePath.slice(0, basePath.lastIndexOf("/"))
+    : "";
+  return dir ? `${dir}/${src}` : src;
+}
+
 export default function MarkdownViewer({ path, label }) {
   const [content, setContent] = useState("");
   const [status, setStatus] = useState("loading");
@@ -61,7 +69,20 @@ export default function MarkdownViewer({ path, label }) {
 
       {status === "ready" && content && (
         <article className="prose-blueprint max-w-none">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            components={{
+              img: ({ src, alt }) => {
+                const resolved = resolveAssetPath(path, src);
+                const finalSrc = resolved
+                  ? `/api/content/asset?path=${encodeURIComponent(resolved)}`
+                  : src;
+                return <img src={finalSrc} alt={alt} />;
+              },
+            }}
+          >
+            {content}
+          </ReactMarkdown>
         </article>
       )}
     </div>

@@ -75,6 +75,13 @@
   padding: 0;
   color: #e7eef4;
 }
+.prose-blueprint img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #2c4a6e;
+  border-radius: 4px;
+  margin: 0.75rem 0;
+}
 .prose-blueprint table {
   width: 100%;
   border-collapse: collapse;
