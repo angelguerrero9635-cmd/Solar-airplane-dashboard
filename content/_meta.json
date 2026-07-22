@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "112c65ee44dcfc761f74b1a9f8e0a2355f925659",
-  "sourceCommitMessage": "Simplify wiring diagram to indented arrow-chain format",
-  "copiedAt": "2026-07-22T03:51:43Z"
+  "sourceCommit": "dca8439053fc70f50454c992f27af0a8898aff27",
+  "sourceCommitMessage": "Confirm diode wiring: 3 parallel paths, not cascaded",
+  "copiedAt": "2026-07-22T03:56:16Z"
 }
