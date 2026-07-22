@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "8956e5932087bf97c795a45a6d7f9803eadf9b86",
-  "sourceCommitMessage": "Recommend a capacitor at the 5V regulator's servo-rail output",
-  "copiedAt": "2026-07-22T22:27:34Z"
+  "sourceCommit": "b9064e67fd20181201d5181ab592b73d930beb6c",
+  "sourceCommitMessage": "Confirm candidate capacitor part for battery/array/regulator",
+  "copiedAt": "2026-07-22T22:37:51Z"
 }
