@@ -6,6 +6,7 @@ import StatusPill from "./StatusPill";
 const LINKS = [
   { href: "/", label: "Dashboard" },
   { href: "/specs", label: "Specs" },
+  { href: "/wiring", label: "Wiring" },
   { href: "/calculations", label: "Calc" },
   { href: "/decisions", label: "ADRs" },
   { href: "/logs", label: "Logs" },

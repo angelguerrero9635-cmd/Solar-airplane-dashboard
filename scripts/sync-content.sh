@@ -16,6 +16,7 @@ cp "$SOURCE_DIR/logs/test_flights.md" "$DEST/logs/test_flights.md"
 cp "$SOURCE_DIR/calculations/power_budget.md" "$DEST/calculations/power_budget.md"
 cp "$SOURCE_DIR/calculations/battery_soc.md" "$DEST/calculations/battery_soc.md"
 cp "$SOURCE_DIR/specs/components.md" "$DEST/specs/components.md"
+cp "$SOURCE_DIR/specs/wiring_diagram.md" "$DEST/specs/wiring_diagram.md"
 cp "$SOURCE_DIR/specs/datasheets/sunpower_c60.md" "$DEST/specs/datasheets/sunpower_c60.md"
 
 # decisions/ can grow over time (new ADRs), so sync the whole directory.

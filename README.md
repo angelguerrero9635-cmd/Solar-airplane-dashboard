@@ -15,6 +15,7 @@ to run — it only reads its own bundled `content/` folder.
 
 - **Dashboard** (`/`) — view `CLAUDE.md`
 - **Specs** (`/specs`) — component table and datasheet extractions
+- **Wiring** (`/wiring`) — block-level power and signal diagram
 - **Calc** (`/calculations`) — power budget and battery SOC write-ups
   (the `.py` scripts themselves stay code-only, run through Claude Code)
 - **ADRs** (`/decisions`) — browse existing decision records

@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "c72939fa9ded6408327e81ea30449a84b21755d3",
-  "sourceCommitMessage": "Update wing to Clark-Y airfoil, 1200x200mm",
-  "copiedAt": "2026-07-22T03:30:44Z"
+  "sourceCommit": "112c65ee44dcfc761f74b1a9f8e0a2355f925659",
+  "sourceCommitMessage": "Simplify wiring diagram to indented arrow-chain format",
+  "copiedAt": "2026-07-22T03:51:43Z"
 }
