@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "c328f1efe7bc8d22e0a2da1901aa457404e63cbf",
-  "sourceCommitMessage": "Log first 7-cell bench measurement",
-  "copiedAt": "2026-07-22T19:03:35Z"
+  "sourceCommit": "528100dda266467db7a31c04803d3b52b48846c6",
+  "sourceCommitMessage": "Add voltage limits/range for electrical components in specs",
+  "copiedAt": "2026-07-22T19:21:39Z"
 }
