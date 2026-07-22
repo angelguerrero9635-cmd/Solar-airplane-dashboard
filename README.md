@@ -1,14 +1,15 @@
 # Solar Glider — Project Log Dashboard
 
-A Next.js dashboard for the solar glider project. It reads files
-**directly from your docs repo** (`solar-airplane`) via the GitHub API —
-there's no separate database. The repo stays the single source of truth;
-this is a read-only window into it. All edits happen through Claude Code,
-not this app.
+A Next.js dashboard for the solar glider project. It renders a **bundled
+snapshot** of the docs repo's (`solar-airplane`) markdown files — the
+content lives in `content/` inside this repo, not fetched live from
+GitHub. `solar-airplane` stays the actual source of truth; this app is a
+read-only, offline-friendly viewer over a copy of it. All edits happen
+through Claude Code, in the `solar-airplane` repo — not here.
 
 This is a **separate app from your docs repo**. It has its own GitHub repo
-and its own Vercel project, and talks to your docs repo over the GitHub API
-using a personal access token.
+and its own Vercel project, and needs no GitHub credentials or API access
+to run — it only reads its own bundled `content/` folder.
 
 ## What it does
 
@@ -21,66 +22,63 @@ using a personal access token.
   `logs/test_flights.md`
 - **Roadmap** (`/docs/roadmap.md`) — view the phase plan
 
+The status pill in the header shows which `solar-airplane` commit the
+bundled content was last synced from (`content/_meta.json`), not a live
+sync indicator.
+
+## Keeping content up to date
+
+Since content is bundled, not fetched live, it goes stale as
+`solar-airplane` changes. Refresh it with:
+
+```bash
+scripts/sync-content.sh /path/to/local/solar-airplane-checkout [branch]
+```
+
+This overwrites `content/` from that checkout and rewrites
+`content/_meta.json` with the source commit it copied from. Commit and
+push (or redeploy) afterward for the change to show up.
+
 ## Setup
 
 ### 1. Push this app to its own GitHub repo
 
 ```bash
-cd solar-glider-dashboard
+cd solar-airplane-dashboard
 git init
 git add .
 git commit -m "Initial dashboard scaffold"
-gh repo create solar-glider-dashboard --private --source=. --push
+gh repo create solar-airplane-dashboard --private --source=. --push
 # or create the repo on github.com and `git remote add origin ...` + push
 ```
 
-### 2. Create a GitHub Personal Access Token
+### 2. Deploy to Vercel
 
-Use a **fine-grained token** scoped to only the docs repo:
+1. Import the `solar-airplane-dashboard` repo into Vercel
+2. Deploy — no environment variables needed.
 
-1. Go to <https://github.com/settings/personal-access-tokens/new>
-2. Repository access → **Only select repositories** → pick
-   `solar-airplane`
-3. Permissions → **Contents: Read-only** (this app never writes)
-4. Generate, copy the token (starts with `github_pat_`)
-
-### 3. Deploy to Vercel
-
-1. Import the `solar-glider-dashboard` repo into Vercel
-2. Add these environment variables (Project Settings → Environment
-   Variables):
-
-   | Variable | Value |
-   |---|---|
-   | `GITHUB_OWNER` | your GitHub username/org (owner of the docs repo) |
-   | `GITHUB_REPO` | `solar-airplane` |
-   | `GITHUB_BRANCH` | the branch to read/write — check whether that's `main` or the `claude/solar-fpv-glider-setup-oq43lr` branch your last Claude Code session pushed to |
-   | `GITHUB_TOKEN` | the fine-grained PAT from step 2 |
-
-3. Deploy and visit the URL.
-
-### 4. Local development (optional)
+### 3. Local development
 
 ```bash
 npm install
-cp .env.example .env.local   # fill in real values
 npm run dev
 ```
 
 ## Notes & limitations
 
-- **Read-only.** This app has no write path back to GitHub at all — no
-  editor, no save button, no PUT requests. All edits to the docs repo
-  happen through Claude Code; this dashboard is just a viewer.
+- **Read-only.** This app has no write path anywhere — no editor, no save
+  button, no API calls that mutate anything. All edits to the docs happen
+  through Claude Code, in the `solar-airplane` repo.
+- **Bundled snapshot, not live.** Unlike a database-backed or
+  API-backed app, this dashboard cannot reflect a change in
+  `solar-airplane` until someone runs `scripts/sync-content.sh` and
+  redeploys. If you need live-as-of-right-now data, this isn't that.
 - **No authentication.** This app has no login gate — anyone with the
-  deployed URL can view your docs repo's contents. Only deploy it somewhere
-  not publicly discoverable, or add your own access control (e.g. Vercel's
+  deployed URL can view the bundled content. Only deploy it somewhere not
+  publicly discoverable, or add your own access control (e.g. Vercel's
   password protection or an allowlist) in front of it if that matters to
   you.
 - **Doesn't run the Python scripts.** `calculations/power_budget.py` and
   `battery_soc.py` stay Claude Code's job — this dashboard only displays
-  their companion markdown write-ups.
-- **Branch awareness.** Since your repo currently has work on a
-  `claude/solar-fpv-glider-setup-oq43lr` branch, double check `GITHUB_BRANCH`
-  points at wherever your latest committed state actually lives before
-  relying on this for viewing.
+  their companion markdown write-ups (and doesn't even bundle the `.py`
+  files themselves).

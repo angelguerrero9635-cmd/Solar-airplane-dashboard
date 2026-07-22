@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { listDir } from "@/lib/github";
+import { listDir } from "@/lib/content";
 
 export async function GET(req) {
   const { searchParams } = new URL(req.url);

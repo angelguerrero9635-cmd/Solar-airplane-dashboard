@@ -17,7 +17,7 @@ export default function MarkdownViewer({ path, label }) {
     setStatus("loading");
     try {
       const res = await fetch(
-        `/api/github/file?path=${encodeURIComponent(path)}`
+        `/api/content/file?path=${encodeURIComponent(path)}`
       );
       if (res.status === 404) {
         setContent("");
@@ -51,7 +51,7 @@ export default function MarkdownViewer({ path, label }) {
 
       {status === "missing" && (
         <p className="font-mono text-xs text-amber-signal">
-          {path} doesn&apos;t exist yet in the repo.
+          {path} isn&apos;t in this content snapshot.
         </p>
       )}
 

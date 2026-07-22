@@ -15,7 +15,7 @@ export default function DecisionsPage() {
 
   async function loadList() {
     setStatus("loading");
-    const res = await fetch("/api/github/dir?dir=decisions");
+    const res = await fetch("/api/content/dir?dir=decisions");
     const data = await res.json();
     const mdFiles = (Array.isArray(data) ? data : [])
       .filter((f) => f.name.endsWith(".md") && f.name !== "0000-template.md")

@@ -6,7 +6,7 @@ export default function StatusPill() {
   const [info, setInfo] = useState(null);
 
   useEffect(() => {
-    fetch("/api/github/commit-info")
+    fetch("/api/content/snapshot")
       .then((r) => r.json())
       .then((data) => {
         if (data?.sha) {
@@ -33,10 +33,10 @@ export default function StatusPill() {
     >
       <span className={`h-1.5 w-1.5 rounded-full ${color} animate-pulse`} />
       {status === "ok"
-        ? `SYNCED · ${info.sha}`
+        ? `SNAPSHOT · ${info.sha}`
         : status === "error"
-        ? "SYNC ERROR"
-        : "SYNCING…"}
+        ? "SNAPSHOT UNKNOWN"
+        : "CHECKING…"}
     </div>
   );
 }
