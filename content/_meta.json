@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "836a324958615f57d1c0c4cb1c666e4caec98062",
-  "sourceCommitMessage": "Identify ESC as E-Power BE001 from its own spec sheet",
-  "copiedAt": "2026-07-22T19:47:41Z"
+  "sourceCommit": "5911e4d2a07777dcf8a10a5d01018da9bc72e0a9",
+  "sourceCommitMessage": "Log motor-load test (solar-only, no batteries)",
+  "copiedAt": "2026-07-22T22:10:58Z"
 }
