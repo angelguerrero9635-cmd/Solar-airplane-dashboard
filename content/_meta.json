@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "e59f0ed6d91b69a5984632653d28c248f551d2fa",
-  "sourceCommitMessage": "Correct wiring diagram: 3 independent branches, not one shared bus",
-  "copiedAt": "2026-07-22T04:11:45Z"
+  "sourceCommit": "5eba2769bf6db4bd222b554416402bd48af6f88e",
+  "sourceCommitMessage": "Clarify: current sensors are bench-only, in-flight = 1 voltage reading",
+  "copiedAt": "2026-07-22T04:59:22Z"
 }
