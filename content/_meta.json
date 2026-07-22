@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "5911e4d2a07777dcf8a10a5d01018da9bc72e0a9",
-  "sourceCommitMessage": "Log motor-load test (solar-only, no batteries)",
-  "copiedAt": "2026-07-22T22:10:58Z"
+  "sourceCommit": "7b49b7dbcfc27fe6ab3fc783310f0039c14a36c7",
+  "sourceCommitMessage": "Log brownout troubleshooting; recommend battery/array capacitors",
+  "copiedAt": "2026-07-22T22:22:41Z"
 }
