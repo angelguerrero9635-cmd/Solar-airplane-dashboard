@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "159f3f17a73a94fa16c36a5fcd830f15628b70bd",
-  "sourceCommitMessage": "Remove dashboard/ folder, now its own repo",
-  "copiedAt": "2026-07-22T02:46:46+00:00"
+  "sourceCommit": "c72939fa9ded6408327e81ea30449a84b21755d3",
+  "sourceCommitMessage": "Update wing to Clark-Y airfoil, 1200x200mm",
+  "copiedAt": "2026-07-22T03:30:44Z"
 }
