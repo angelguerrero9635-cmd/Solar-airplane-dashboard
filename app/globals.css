@@ -95,7 +95,11 @@
   border: 1px solid #2c4a6e;
   padding: 0.4rem 0.6rem;
   text-align: left;
-  overflow-wrap: anywhere;
+  white-space: normal;
+}
+.prose-blueprint td code,
+.prose-blueprint th code {
+  word-break: break-all;
 }
 .prose-blueprint th {
   font-family: var(--font-mono);
