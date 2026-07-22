@@ -18,7 +18,7 @@ export default function Nav() {
 
   return (
     <header className="sticky top-0 z-10 border-b border-blueprint-600/60 bg-blueprint-900/90 backdrop-blur">
-      <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3 sm:px-6">
+      <div className="mx-auto flex max-w-[1600px] items-center justify-between px-4 py-3 sm:px-6">
         <div className="flex items-baseline gap-3">
           <span className="font-display text-2xl uppercase tracking-wide text-ink">
             Solar Glider

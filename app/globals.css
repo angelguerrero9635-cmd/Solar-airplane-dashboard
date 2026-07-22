@@ -95,6 +95,7 @@
   border: 1px solid #2c4a6e;
   padding: 0.4rem 0.6rem;
   text-align: left;
+  overflow-wrap: anywhere;
 }
 .prose-blueprint th {
   font-family: var(--font-mono);

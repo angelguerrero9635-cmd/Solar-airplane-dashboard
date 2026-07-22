@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-screen bg-blueprint-900 bg-blueprint-grid bg-grid font-body text-ink">
         <Nav />
-        <main className="mx-auto max-w-5xl px-4 pb-24 pt-6 sm:px-6">
+        <main className="mx-auto max-w-[1600px] px-4 pb-24 pt-6 sm:px-6">
           {children}
         </main>
       </body>
