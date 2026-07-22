@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "7b49b7dbcfc27fe6ab3fc783310f0039c14a36c7",
-  "sourceCommitMessage": "Log brownout troubleshooting; recommend battery/array capacitors",
-  "copiedAt": "2026-07-22T22:22:41Z"
+  "sourceCommit": "8956e5932087bf97c795a45a6d7f9803eadf9b86",
+  "sourceCommitMessage": "Recommend a capacitor at the 5V regulator's servo-rail output",
+  "copiedAt": "2026-07-22T22:27:34Z"
 }
