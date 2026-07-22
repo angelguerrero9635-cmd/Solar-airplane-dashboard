@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "ee57e5cbb2374e466224338ac4e5f6945876d3dc",
-  "sourceCommitMessage": "Confirm ESC: 5A, 1S",
-  "copiedAt": "2026-07-22T19:40:00Z"
+  "sourceCommit": "836a324958615f57d1c0c4cb1c666e4caec98062",
+  "sourceCommitMessage": "Identify ESC as E-Power BE001 from its own spec sheet",
+  "copiedAt": "2026-07-22T19:47:41Z"
 }
