@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import StatusPill from "./StatusPill";
 
 const LINKS = [
@@ -14,15 +14,6 @@ const LINKS = [
 
 export default function Nav() {
   const pathname = usePathname();
-  const router = useRouter();
-
-  if (pathname === "/login") return null;
-
-  async function logout() {
-    await fetch("/api/logout", { method: "POST" });
-    router.push("/login");
-    router.refresh();
-  }
 
   return (
     <header className="sticky top-0 z-10 border-b border-blueprint-600/60 bg-blueprint-900/90 backdrop-blur">
@@ -52,12 +43,6 @@ export default function Nav() {
         </nav>
         <div className="flex items-center gap-3">
           <StatusPill />
-          <button
-            onClick={logout}
-            className="font-mono text-[10px] uppercase tracking-widest text-slate-signal hover:text-amber-signal"
-          >
-            Sign out
-          </button>
         </div>
       </div>
       <nav className="flex gap-1 overflow-x-auto border-t border-blueprint-600/40 px-4 py-1.5 font-mono text-[11px] uppercase tracking-wider md:hidden">

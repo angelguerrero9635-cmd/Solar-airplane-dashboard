@@ -1,6 +1,6 @@
 # Solar Glider — Project Log Dashboard
 
-A password-gated Next.js dashboard for the solar glider project. It reads
+A Next.js dashboard for the solar glider project. It reads
 and writes files **directly in your docs repo** (`solar-airplane`) via the
 GitHub API — there's no separate database. The repo stays the single source
 of truth; this is just a nicer window into it than editing markdown files
@@ -61,9 +61,8 @@ Use a **fine-grained token** scoped to only the docs repo:
    | `GITHUB_REPO` | `solar-airplane` |
    | `GITHUB_BRANCH` | the branch to read/write — check whether that's `main` or the `claude/solar-fpv-glider-setup-oq43lr` branch your last Claude Code session pushed to |
    | `GITHUB_TOKEN` | the fine-grained PAT from step 2 |
-   | `DASHBOARD_PASSWORD` | any passphrase you choose |
 
-3. Deploy. Visit the URL, enter your passphrase, and you're in.
+3. Deploy and visit the URL.
 
 ### 4. Local development (optional)
 
@@ -75,9 +74,11 @@ npm run dev
 
 ## Notes & limitations
 
-- **Single-user, cookie-based auth.** This is a personal tool, not a
-  multi-user app — the passphrase just gates a cookie. Don't reuse a
-  sensitive password for it.
+- **No authentication.** This app has no login gate — anyone with the
+  deployed URL can view and edit your docs repo. Only deploy it somewhere
+  not publicly discoverable, or add your own access control (e.g. Vercel's
+  password protection or an allowlist) in front of it if that matters to
+  you.
 - **No merge conflict handling.** If you edit the same file on the website
   and in Claude Code at nearly the same time, whichever saves last wins
   (standard GitHub Contents API behavior — a stale `sha` will make a save
