@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "8eb20e162b3ed172d89cbcea386c3d0b8da73654",
-  "sourceCommitMessage": "Recontextualize 250g as a long-term goal, not a current blocker",
-  "copiedAt": "2026-07-23T00:43:14Z"
+  "sourceCommit": "a5084bf9ff75694e3f3766bb084469805787eb9a",
+  "sourceCommitMessage": "Retire ACS723 current sensors; plan Branch A as solar+battery OR-ing tap",
+  "copiedAt": "2026-07-23T01:10:14Z"
 }
