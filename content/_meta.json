@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "a5084bf9ff75694e3f3766bb084469805787eb9a",
-  "sourceCommitMessage": "Retire ACS723 current sensors; plan Branch A as solar+battery OR-ing tap",
-  "copiedAt": "2026-07-23T01:10:14Z"
+  "sourceCommit": "6119742faf53a137f4da28a719863936950462ec",
+  "sourceCommitMessage": "Resolve Branch A power-vs-sense open question",
+  "copiedAt": "2026-07-23T01:16:26Z"
 }
