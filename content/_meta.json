@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "4fbf29a5c548f94237fe35bab51259bbdb03cfee",
-  "sourceCommitMessage": "Model wing mass scaling with span, correcting a flawed analysis",
-  "copiedAt": "2026-07-23T00:14:56Z"
+  "sourceCommit": "0a28e8e8997145d1e0e6588bb8bff27bc3c7716b",
+  "sourceCommitMessage": "Document 250g weight target and the real gap to it",
+  "copiedAt": "2026-07-23T00:36:43Z"
 }
