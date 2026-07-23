@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "f44f6e3393c040881fbef2330ff6541a308ab77b",
-  "sourceCommitMessage": "Root-cause motor-load shutdowns to battery BMS, not ESC/FC - flag safety implication",
-  "copiedAt": "2026-07-23T20:09:36Z"
+  "sourceCommit": "180769ddc45c92f0db3c2141fc275f6e63bf73f3",
+  "sourceCommitMessage": "Refine BMS-trip finding: likely undervoltage, not fixed overcurrent",
+  "copiedAt": "2026-07-23T23:05:46Z"
 }
