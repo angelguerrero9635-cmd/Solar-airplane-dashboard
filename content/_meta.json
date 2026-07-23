@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "0a28e8e8997145d1e0e6588bb8bff27bc3c7716b",
-  "sourceCommitMessage": "Document 250g weight target and the real gap to it",
-  "copiedAt": "2026-07-23T00:36:43Z"
+  "sourceCommit": "8eb20e162b3ed172d89cbcea386c3d0b8da73654",
+  "sourceCommitMessage": "Recontextualize 250g as a long-term goal, not a current blocker",
+  "copiedAt": "2026-07-23T00:43:14Z"
 }
