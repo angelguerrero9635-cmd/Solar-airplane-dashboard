@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "180769ddc45c92f0db3c2141fc275f6e63bf73f3",
-  "sourceCommitMessage": "Refine BMS-trip finding: likely undervoltage, not fixed overcurrent",
-  "copiedAt": "2026-07-23T23:05:46Z"
+  "sourceCommit": "469471c265ded5f25f762ad03320720ac0035759",
+  "sourceCommitMessage": "Overturn the undervoltage-trip hypothesis: it's overcurrent, not SOC-dependent",
+  "copiedAt": "2026-07-23T23:51:05Z"
 }
