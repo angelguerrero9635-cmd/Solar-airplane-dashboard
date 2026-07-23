@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "45c1c0c0233bbbd2509ea1f908808077aa0295f3",
-  "sourceCommitMessage": "Log 2026-07-23 bench test: battery-connected, no motor, before/after camera",
-  "copiedAt": "2026-07-23T17:30:06Z"
+  "sourceCommit": "15419f55177deac19e089d97a2e5b7d6fb48745f",
+  "sourceCommitMessage": "Correct ESC-Voc topology understanding: ESC sees bus voltage, not panel",
+  "copiedAt": "2026-07-23T17:41:35Z"
 }
