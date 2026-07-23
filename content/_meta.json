@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "f5ed2e10c686cb84f3ae9c4345c8c85c756a380b",
-  "sourceCommitMessage": "Log confirmed temperature effect on array voltage",
-  "copiedAt": "2026-07-23T19:57:07Z"
+  "sourceCommit": "f44f6e3393c040881fbef2330ff6541a308ab77b",
+  "sourceCommitMessage": "Root-cause motor-load shutdowns to battery BMS, not ESC/FC - flag safety implication",
+  "copiedAt": "2026-07-23T20:09:36Z"
 }
