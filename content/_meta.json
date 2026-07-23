@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "8c1f2eabbd7d09adb8bc695963c5fbb2397e60a3",
-  "sourceCommitMessage": "Identify 5V Regulator as Pololu S7V7F5; resolve unweighed open question",
-  "copiedAt": "2026-07-23T02:03:18Z"
+  "sourceCommit": "fb624d9b45cc541c5388d4826b2b7c4f2e018b4a",
+  "sourceCommitMessage": "Add prioritized capacitor install recommendation (4 locations)",
+  "copiedAt": "2026-07-23T02:09:39Z"
 }
