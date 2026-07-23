@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "8aef4c6b920dbf9378f3749c041f272663c3ac1e",
-  "sourceCommitMessage": "Add negative/return paths to wiring diagram; confirm tonight's plan",
-  "copiedAt": "2026-07-23T07:01:27Z"
+  "sourceCommit": "85a3d94c4bf675b49e70355f25ad11671e04670c",
+  "sourceCommitMessage": "Confirm FC ground isolation and 5V regulator VIN capacitor are built",
+  "copiedAt": "2026-07-23T12:06:50Z"
 }
