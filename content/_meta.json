@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "85a3d94c4bf675b49e70355f25ad11671e04670c",
-  "sourceCommitMessage": "Confirm FC ground isolation and 5V regulator VIN capacitor are built",
-  "copiedAt": "2026-07-23T12:06:50Z"
+  "sourceCommit": "2ad9a014f59b81786a15f2d2beb20a3080e595c3",
+  "sourceCommitMessage": "Document battery BMS disconnect at 4.2V; flag downstream implications",
+  "copiedAt": "2026-07-23T15:39:28Z"
 }
