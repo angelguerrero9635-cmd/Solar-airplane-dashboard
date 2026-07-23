@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "fb624d9b45cc541c5388d4826b2b7c4f2e018b4a",
-  "sourceCommitMessage": "Add prioritized capacitor install recommendation (4 locations)",
-  "copiedAt": "2026-07-23T02:09:39Z"
+  "sourceCommit": "daab1207c28bf74cce63fa4d4c1ceb749a68897d",
+  "sourceCommitMessage": "Flag ESC-vs-FC brownout attribution: shared ground return path found",
+  "copiedAt": "2026-07-23T02:27:52Z"
 }
