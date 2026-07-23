@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "daab1207c28bf74cce63fa4d4c1ceb749a68897d",
-  "sourceCommitMessage": "Flag ESC-vs-FC brownout attribution: shared ground return path found",
-  "copiedAt": "2026-07-23T02:27:52Z"
+  "sourceCommit": "8aef4c6b920dbf9378f3749c041f272663c3ac1e",
+  "sourceCommitMessage": "Add negative/return paths to wiring diagram; confirm tonight's plan",
+  "copiedAt": "2026-07-23T07:01:27Z"
 }
