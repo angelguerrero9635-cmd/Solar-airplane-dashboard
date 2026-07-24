@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "b7340c56be1fb64a07ed8c260ea05251df90a707",
-  "sourceCommitMessage": "Wiring diagram: separate ground bypass line from 5A Current Sensor box (sensors have no negative pin)",
-  "copiedAt": "2026-07-24T04:34:01Z"
+  "sourceCommit": "f9cd74dff2af6e20f1e382ed45356de7ba9642dc",
+  "sourceCommitMessage": "Rebuild wiring diagram from scratch: declutter and reorganize",
+  "copiedAt": "2026-07-24T05:09:23Z"
 }
