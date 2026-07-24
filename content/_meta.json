@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "8c16e2b3e160f8755c286f75b58f00ab1066c529",
-  "sourceCommitMessage": "Wiring diagram: capacitor above regulator, show its ground connection",
-  "copiedAt": "2026-07-24T15:50:15Z"
+  "sourceCommit": "920abc2100bce78710bffffaa85d9723aacbc531",
+  "sourceCommitMessage": "Wiring diagram: Diode #2's OUT- exits right of the positive line",
+  "copiedAt": "2026-07-24T16:09:02Z"
 }
