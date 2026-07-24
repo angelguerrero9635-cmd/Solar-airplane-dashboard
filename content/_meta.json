@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "16aeb7967f36822edd90285d97292d764da56125",
-  "sourceCommitMessage": "Add three-regime throttle/voltage theory and 5V regulator headroom flag",
-  "copiedAt": "2026-07-24T00:06:23Z"
+  "sourceCommit": "1fa4dc3646dc96eef2e50e8b7e90247b66b466e5",
+  "sourceCommitMessage": "Eliminate Branch A entirely; VBAT now wires to ESC's red pin",
+  "copiedAt": "2026-07-24T00:46:19Z"
 }
