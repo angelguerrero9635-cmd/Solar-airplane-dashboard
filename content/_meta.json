@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "9ab5a620530a6a7f5a4358adeddec77392a6b7ef",
-  "sourceCommitMessage": "Wiring diagram: portrait orientation, remove bus block, connect return lines directly",
-  "copiedAt": "2026-07-24T15:45:57Z"
+  "sourceCommit": "8c16e2b3e160f8755c286f75b58f00ab1066c529",
+  "sourceCommitMessage": "Wiring diagram: capacitor above regulator, show its ground connection",
+  "copiedAt": "2026-07-24T15:50:15Z"
 }
