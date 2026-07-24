@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "5c6e2a93330a4df88c4618c4c370e504b4d3fbf6",
-  "sourceCommitMessage": "Fully route all positive/negative lines in wiring diagram; add hump crossings",
-  "copiedAt": "2026-07-24T01:16:59Z"
+  "sourceCommit": "da959f75b0a4a5c1d981f89e143393b6620cbeaa",
+  "sourceCommitMessage": "Wiring diagram: show ideal diode modules' separate IN-/OUT- negative pins",
+  "copiedAt": "2026-07-24T01:41:22Z"
 }
