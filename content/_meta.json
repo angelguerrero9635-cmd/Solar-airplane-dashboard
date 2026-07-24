@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "da959f75b0a4a5c1d981f89e143393b6620cbeaa",
-  "sourceCommitMessage": "Wiring diagram: show ideal diode modules' separate IN-/OUT- negative pins",
-  "copiedAt": "2026-07-24T01:41:22Z"
+  "sourceCommit": "16d6b1a9fd01737f8bc4fa7e6e763bed0eb4e828",
+  "sourceCommitMessage": "Wiring diagram: fix two lines that crossed through component boxes",
+  "copiedAt": "2026-07-24T01:48:04Z"
 }
