@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "1ea4dbb7e4b1f32ddcdd4e54be4a185ff5481142",
-  "sourceCommitMessage": "Wiring diagram: FC ground exits right side, ties directly into Branch C's lane",
-  "copiedAt": "2026-07-24T18:20:06Z"
+  "sourceCommit": "422810cdd7324e1165755b913f79ed20d1136753",
+  "sourceCommitMessage": "Log battery-only test #3: VBAT does not track bus voltage as expected",
+  "copiedAt": "2026-07-24T22:44:29Z"
 }
