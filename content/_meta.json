@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "469471c265ded5f25f762ad03320720ac0035759",
-  "sourceCommitMessage": "Overturn the undervoltage-trip hypothesis: it's overcurrent, not SOC-dependent",
-  "copiedAt": "2026-07-23T23:51:05Z"
+  "sourceCommit": "16aeb7967f36822edd90285d97292d764da56125",
+  "sourceCommitMessage": "Add three-regime throttle/voltage theory and 5V regulator headroom flag",
+  "copiedAt": "2026-07-24T00:06:23Z"
 }
