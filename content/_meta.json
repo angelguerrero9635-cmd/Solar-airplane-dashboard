@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "422810cdd7324e1165755b913f79ed20d1136753",
-  "sourceCommitMessage": "Log battery-only test #3: VBAT does not track bus voltage as expected",
-  "copiedAt": "2026-07-24T22:44:29Z"
+  "sourceCommit": "f0c7ba067f89cad521bc449d0b577fb6d724a51f",
+  "sourceCommitMessage": "Resolve VBAT/bus-voltage discrepancy; log a more important new finding",
+  "copiedAt": "2026-07-24T22:49:54Z"
 }
