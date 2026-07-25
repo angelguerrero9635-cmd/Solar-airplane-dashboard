@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "f0c7ba067f89cad521bc449d0b577fb6d724a51f",
-  "sourceCommitMessage": "Resolve VBAT/bus-voltage discrepancy; log a more important new finding",
-  "copiedAt": "2026-07-24T22:49:54Z"
+  "sourceCommit": "77f7753d5788df26b9db5aac2d761467f2894b75",
+  "sourceCommitMessage": "Log new failure mode: ESC cuts out at 2.25V bus, battery/FC stay online",
+  "copiedAt": "2026-07-25T20:51:41Z"
 }
