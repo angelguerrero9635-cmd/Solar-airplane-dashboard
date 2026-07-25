@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "192782d2d0626f0321be1c37146ca944b34270c6",
-  "sourceCommitMessage": "Correct ESC cutout entry: USB power confounds the regulator-margin claim",
-  "copiedAt": "2026-07-25T20:56:15Z"
+  "sourceCommit": "55172a01a52cf2b10e280403687cef132b05548c",
+  "sourceCommitMessage": "Log solar-only test: regulator/FC cut out at 2.25V, likely array collapse",
+  "copiedAt": "2026-07-25T21:29:18Z"
 }
