@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "170364e410f239544ff00319a347814268722c50",
-  "sourceCommitMessage": "Log rough thrust estimate at 2.5A (~30-45g), flagged as unmeasured",
-  "copiedAt": "2026-07-26T15:38:00Z"
+  "sourceCommit": "d3e4307ca8291d51336be9983a929a7e5768c5fe",
+  "sourceCommitMessage": "Throttle scale 0.45 validated: solves OCP risk without a voltage alarm",
+  "copiedAt": "2026-07-26T17:21:35Z"
 }
