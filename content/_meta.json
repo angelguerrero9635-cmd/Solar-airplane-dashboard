@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "d3e4307ca8291d51336be9983a929a7e5768c5fe",
-  "sourceCommitMessage": "Throttle scale 0.45 validated: solves OCP risk without a voltage alarm",
-  "copiedAt": "2026-07-26T17:21:35Z"
+  "sourceCommit": "37c7b7ffbc9b17b3fcaed73649bfeb76a25781f8",
+  "sourceCommitMessage": "Wing span updated to 1220mm; foam density updated to real FOAMULAR NGX figure",
+  "copiedAt": "2026-07-28T02:05:34Z"
 }
