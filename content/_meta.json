@@ -1,7 +1,7 @@
 {
   "sourceRepo": "angelguerrero9635-cmd/solar-airplane",
   "sourceBranch": "claude/extract-dashboard-repo-ml0h9m",
-  "sourceCommit": "37c7b7ffbc9b17b3fcaed73649bfeb76a25781f8",
-  "sourceCommitMessage": "Wing span updated to 1220mm; foam density updated to real FOAMULAR NGX figure",
-  "copiedAt": "2026-07-28T02:05:34Z"
+  "sourceCommit": "75f7b85105dd1d1df27f183a846f4a033bfafba4",
+  "sourceCommitMessage": "Add first empennage sizing: fuselage 1220mm, horizontal 320x80mm, vertical 120x80mm",
+  "copiedAt": "2026-08-06T04:15:39Z"
 }
